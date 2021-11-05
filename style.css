@@ -33,3 +33,7 @@ body {
 .grid-item.l{
     width: 120px;
 }
+
+.x {
+    opacity: 0.5;
+}

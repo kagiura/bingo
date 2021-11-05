@@ -3,6 +3,8 @@
     <head>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
         <style>@import url('style.css');</style>
     </head>
     <body>
@@ -102,6 +104,10 @@
                     itemSelector: '.grid-item',
                     masonry: {}
                 });
+                $('.grid-item').each((i, item)=>{
+                    $(item).attr('data-tippy-content', $(item).attr("src").replace(/tiles\/(.*).png/, '$1'))
+                })
+                tippy('[data-tippy-content]');
             })
         </script>
     </body>
