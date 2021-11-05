@@ -1,0 +1,35 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+.header {
+    display: block;
+    width: 610px;
+    margin: auto;
+}
+
+.grid{
+    width: 610px;
+    margin: auto;
+}
+
+.grid-item{
+    width: 60px;
+    height: 60px;
+    border: solid 1px black;
+}
+
+.grid-item.t{
+    height: 120px;
+}
+
+.grid-item.l{
+    width: 120px;
+}
