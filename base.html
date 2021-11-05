@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+        <style>@import url('style.css');</style>
+    </head>
+    <body>
+        <img class="header" src="header.png">
+        <div class="grid">
+
+        </div>
+        <script>
+            $(()=>{
+                $('.grid').isotope({
+                    itemSelector: '.grid-item',
+                    masonry: {}
+                });
+            })
+        </script>
+    </body>
+</html>
